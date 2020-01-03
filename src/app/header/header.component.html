@@ -1,0 +1,20 @@
+
+
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a routerLink='purchase' class="navbar-brand">Maduuka</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav" *ngFor="let item of headItems">
+            
+            <li class="nav-item">
+                <a class="nav-link" routerLink={{item.url}}> {{item.name}}</a>
+
+            </li>
+        </ul>
+    </div>
+
+</nav>
+
